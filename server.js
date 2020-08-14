@@ -6,4 +6,6 @@ const server = express();
 server.use( helmet() );
 server.use( express.json() );
 
+server.use( "/api/projects", require( "./projects/projects-router" ) );
+
 module.exports = server;
