@@ -38,7 +38,7 @@ exports.up = function(knex)
            .notNullable()
            .defaultTo( false );
       
-      table.integer( "projects_id" )
+      table.integer( "project_id" )
            .unsigned()
            .notNullable()
            .references( "id" )
